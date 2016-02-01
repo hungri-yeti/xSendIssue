@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B24C8661BB73CFB006B48EF /* KSPasswordField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B24C8651BB73CFB006B48EF /* KSPasswordField.m */; };
+		3B5F28FE1B4F82D600FAFEA1 /* CreateIssue_github.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5F28FD1B4F82D600FAFEA1 /* CreateIssue_github.xib */; };
+		3BAE02BD1BAB427B007405DA /* HYPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAE02BB1BAB427B007405DA /* HYPrefs.m */; };
+		3BAE02BE1BAB427B007405DA /* HYPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BAE02BC1BAB427B007405DA /* HYPrefs.xib */; };
+		3BCE3E0A1B4F5C220044D182 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCE3E091B4F5C220044D182 /* AppKit.framework */; };
+		3BCE3E0C1B4F5C220044D182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCE3E0B1B4F5C220044D182 /* Foundation.framework */; };
+		3BCE3E111B4F5C220044D182 /* xSendIssue.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 3BCE3E101B4F5C220044D182 /* xSendIssue.xcscheme */; };
+		3BCE3E141B4F5C220044D182 /* xSendIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCE3E131B4F5C220044D182 /* xSendIssue.m */; };
+		3BDC4D3B1B5174F9005833AE /* HYIssueViewGithub.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC4D3A1B5174F9005833AE /* HYIssueViewGithub.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B24C8641BB73CFB006B48EF /* KSPasswordField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPasswordField.h; sourceTree = "<group>"; };
+		3B24C8651BB73CFB006B48EF /* KSPasswordField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPasswordField.m; sourceTree = "<group>"; };
+		3B5F28FD1B4F82D600FAFEA1 /* CreateIssue_github.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateIssue_github.xib; sourceTree = "<group>"; };
+		3BAE02BA1BAB427B007405DA /* HYPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPrefs.h; sourceTree = "<group>"; };
+		3BAE02BB1BAB427B007405DA /* HYPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPrefs.m; sourceTree = "<group>"; };
+		3BAE02BC1BAB427B007405DA /* HYPrefs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYPrefs.xib; sourceTree = "<group>"; };
+		3BCE3E061B4F5C220044D182 /* xSendIssue.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xSendIssue.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCE3E091B4F5C220044D182 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		3BCE3E0B1B4F5C220044D182 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		3BCE3E0F1B4F5C220044D182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BCE3E101B4F5C220044D182 /* xSendIssue.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = xSendIssue.xcscheme; path = xSendIssue.xcodeproj/xcshareddata/xcschemes/xSendIssue.xcscheme; sourceTree = SOURCE_ROOT; };
+		3BCE3E121B4F5C220044D182 /* xSendIssue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xSendIssue.h; sourceTree = "<group>"; };
+		3BCE3E131B4F5C220044D182 /* xSendIssue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xSendIssue.m; sourceTree = "<group>"; };
+		3BDC4D391B5174F9005833AE /* HYIssueViewGithub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYIssueViewGithub.h; sourceTree = "<group>"; };
+		3BDC4D3A1B5174F9005833AE /* HYIssueViewGithub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYIssueViewGithub.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BCE3E041B4F5C220044D182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCE3E0A1B4F5C220044D182 /* AppKit.framework in Frameworks */,
+				3BCE3E0C1B4F5C220044D182 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B24C8671BB73D07006B48EF /* ksPasswordField */ = {
+			isa = PBXGroup;
+			children = (
+				3B24C8641BB73CFB006B48EF /* KSPasswordField.h */,
+				3B24C8651BB73CFB006B48EF /* KSPasswordField.m */,
+			);
+			name = ksPasswordField;
+			sourceTree = "<group>";
+		};
+		3BAE02B71BAB3A66007405DA /* prefs */ = {
+			isa = PBXGroup;
+			children = (
+				3BAE02BA1BAB427B007405DA /* HYPrefs.h */,
+				3BAE02BB1BAB427B007405DA /* HYPrefs.m */,
+				3BAE02BC1BAB427B007405DA /* HYPrefs.xib */,
+			);
+			name = prefs;
+			sourceTree = "<group>";
+		};
+		3BAE02B81BAB3A6F007405DA /* github */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC4D391B5174F9005833AE /* HYIssueViewGithub.h */,
+				3BDC4D3A1B5174F9005833AE /* HYIssueViewGithub.m */,
+				3B5F28FD1B4F82D600FAFEA1 /* CreateIssue_github.xib */,
+			);
+			name = github;
+			sourceTree = "<group>";
+		};
+		3BCE3DFD1B4F5C220044D182 = {
+			isa = PBXGroup;
+			children = (
+				3BCE3E0D1B4F5C220044D182 /* xSendIssue */,
+				3BCE3E081B4F5C220044D182 /* Frameworks */,
+				3BCE3E071B4F5C220044D182 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BCE3E071B4F5C220044D182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE3E061B4F5C220044D182 /* xSendIssue.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BCE3E081B4F5C220044D182 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE3E091B4F5C220044D182 /* AppKit.framework */,
+				3BCE3E0B1B4F5C220044D182 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BCE3E0D1B4F5C220044D182 /* xSendIssue */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE3E121B4F5C220044D182 /* xSendIssue.h */,
+				3BCE3E131B4F5C220044D182 /* xSendIssue.m */,
+				3BAE02B71BAB3A66007405DA /* prefs */,
+				3BAE02B81BAB3A6F007405DA /* github */,
+				3B24C8671BB73D07006B48EF /* ksPasswordField */,
+				3BCE3E0E1B4F5C220044D182 /* Supporting Files */,
+			);
+			path = xSendIssue;
+			sourceTree = "<group>";
+		};
+		3BCE3E0E1B4F5C220044D182 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE3E0F1B4F5C220044D182 /* Info.plist */,
+				3BCE3E101B4F5C220044D182 /* xSendIssue.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BCE3E051B4F5C220044D182 /* xSendIssue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BCE3E1A1B4F5C220044D182 /* Build configuration list for PBXNativeTarget "xSendIssue" */;
+			buildPhases = (
+				3BCE3E021B4F5C220044D182 /* Sources */,
+				3BCE3E031B4F5C220044D182 /* Resources */,
+				3BCE3E041B4F5C220044D182 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xSendIssue;
+			productName = xSendIssue;
+			productReference = 3BCE3E061B4F5C220044D182 /* xSendIssue.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BCE3DFE1B4F5C220044D182 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "hungri-yeti";
+				TargetAttributes = {
+					3BCE3E051B4F5C220044D182 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 3BCE3E011B4F5C220044D182 /* Build configuration list for PBXProject "xSendIssue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3BCE3DFD1B4F5C220044D182;
+			productRefGroup = 3BCE3E071B4F5C220044D182 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BCE3E051B4F5C220044D182 /* xSendIssue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BCE3E031B4F5C220044D182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BCE3E111B4F5C220044D182 /* xSendIssue.xcscheme in Resources */,
+				3BAE02BE1BAB427B007405DA /* HYPrefs.xib in Resources */,
+				3B5F28FE1B4F82D600FAFEA1 /* CreateIssue_github.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BCE3E021B4F5C220044D182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BAE02BD1BAB427B007405DA /* HYPrefs.m in Sources */,
+				3B24C8661BB73CFB006B48EF /* KSPasswordField.m in Sources */,
+				3BCE3E141B4F5C220044D182 /* xSendIssue.m in Sources */,
+				3BDC4D3B1B5174F9005833AE /* HYIssueViewGithub.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3BCE3E181B4F5C220044D182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					Libraries/XcodeFrameworks,
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		3BCE3E191B4F5C220044D182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					Libraries/XcodeFrameworks,
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		3BCE3E1B1B4F5C220044D182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = xSendIssue/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hungri-yeti.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		3BCE3E1C1B4F5C220044D182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = xSendIssue/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hungri-yeti.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BCE3E011B4F5C220044D182 /* Build configuration list for PBXProject "xSendIssue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCE3E181B4F5C220044D182 /* Debug */,
+				3BCE3E191B4F5C220044D182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BCE3E1A1B4F5C220044D182 /* Build configuration list for PBXNativeTarget "xSendIssue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BCE3E1B1B4F5C220044D182 /* Debug */,
+				3BCE3E1C1B4F5C220044D182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BCE3DFE1B4F5C220044D182 /* Project object */;
+}
