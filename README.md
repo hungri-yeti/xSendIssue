@@ -37,7 +37,7 @@ How to use:
 
 xSendIssue uses a separate preferences file from Xcode:
     
-    /Users/kenl/Library/Preferences/com.hungri-yeti.xSendIssue.plist
+    ~/Library/Preferences/com.hungri-yeti.xSendIssue.plist
 
 
 ToDo:
