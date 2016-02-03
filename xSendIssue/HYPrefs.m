@@ -82,6 +82,45 @@
 
 
 #pragma mark - keychain
+// given username and server, obtain password from keychain:
++ (NSString*) getPassForHostUser:(NSString*)host user:(NSString*)user {
+	// debug:
+	NSLog( @"getPassForHostUser: host: %@, user: %@\n", host, user );
+	
+	NSString* userPass = @"";
+	
+	// if user has existing name/pass/host in keychain, get it and pass it into HYPrefs initWithUser:host:pass
+	OSStatus keychainResult = noErr;
+	UInt32 returnpasswordLength = 0;
+	char *passwordData;
+	keychainResult = SecKeychainFindInternetPassword(NULL,
+													 (UInt32)host.length,
+													 [host cStringUsingEncoding:NSASCIIStringEncoding],
+													 0,
+													 NULL,
+													 (UInt32)user.length,
+													 [user cStringUsingEncoding:NSASCIIStringEncoding],
+													 0,
+													 NULL,
+													 0,
+													 kSecProtocolTypeAny,
+													 kSecAuthenticationTypeDefault,
+													 &returnpasswordLength,
+													 (void *)&passwordData,
+													 NULL);
+	
+	if (noErr != keychainResult) {
+		NSLog(@"unable to find keychain item for user: %@, server: %@, error %@", user, host, SecCopyErrorMessageString(keychainResult, NULL));
+	}
+	else {
+		userPass = [NSString stringWithUTF8String:passwordData];
+	}
+	
+	return userPass;
+}
+
+
+
 - (void)addKeychainItem {
 	// see if the item already exists:
 	SecKeychainItemRef keychainItem;

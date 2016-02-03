@@ -14,6 +14,7 @@
 @property (nonatomic) IBOutlet NSTextView* descriptionTextView;
 @property (weak, nonatomic) IBOutlet NSTextField* titleTextField;
 @property (weak, nonatomic) IBOutlet NSButton* buttonSubmit;
+@property (weak, nonatomic) IBOutlet NSButton* openUrl;
 
 
 

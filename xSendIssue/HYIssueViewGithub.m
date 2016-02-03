@@ -47,6 +47,24 @@ NSString* const kGithubIssueSubmitUrl = @"https://api.github.com/repos%@/issues"
 
 
 #pragma mark - buttons
+- (IBAction)didChangeOpenUrl:(id)sender {
+	// update prefs:
+	NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+	// get existing prefs (if any):
+	NSDictionary* preferences = [[NSUserDefaults standardUserDefaults]
+								 persistentDomainForName:@"com.hungri-yeti.xSendIssue"];
+	NSMutableDictionary* mutablePreferences = [NSMutableDictionary
+											   dictionaryWithDictionary:preferences];
+	
+	// modify & persist:
+	[mutablePreferences setObject:[NSNumber numberWithInteger:self.openUrl.state] forKey:@"openUrl"];
+	[[NSUserDefaults standardUserDefaults] setPersistentDomain:mutablePreferences
+													   forName:@"com.hungri-yeti.xSendIssue"];
+	[defaults synchronize];
+}
+
+
+
 - (IBAction)didTapCancelButton:(id)sender
 {
 	[self.window.sheetParent endSheet:self.window returnCode:NSModalResponseCancel];
@@ -126,21 +144,27 @@ NSString* const kGithubIssueSubmitUrl = @"https://api.github.com/repos%@/issues"
 					// put the location on the pasteboard:
 					NSError* jsonError;
 					NSMutableDictionary * innerJson = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonError];
-					NSString* issueLocation =[ innerJson objectForKey:@"html_url"];
+					NSString* issueUrl =[ innerJson objectForKey:@"html_url"];
 					
 					[[NSPasteboard generalPasteboard] declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
-					[[NSPasteboard generalPasteboard] setString:issueLocation forType:NSStringPboardType];
+					[[NSPasteboard generalPasteboard] setString:issueUrl forType:NSStringPboardType];
 					
 					// let the user know it's there if they want to paste:
 					NSUserNotification *notification = [[NSUserNotification alloc] init];
 					notification.title = @"Issue Created";
-					notification.informativeText = issueLocation;
+					notification.informativeText = issueUrl;
 					notification.soundName = NSUserNotificationDefaultSoundName;
 					
 					[[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+					
+					
+					// Open up URL w/default browser if user requested:
+					if( self.openUrl.state == NSOnState ) {
+						[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString: issueUrl]];
+					}
 
 					
-					NSLog(@"location: %@", issueLocation);
+					NSLog(@"location: %@", issueUrl);
 				}
 			}
 			
@@ -180,9 +204,6 @@ NSString* const kGithubIssueSubmitUrl = @"https://api.github.com/repos%@/issues"
 
 	// get the necessary info from the URL:
 	self.hostName = [repo host];
-	NSDictionary* prefsDict = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.hungri-yeti.xSendIssue"];
-	self.userName =[prefsDict objectForKey:self.hostName];
-	
 	
 	return self.init;
 }
@@ -210,6 +231,11 @@ NSString* const kGithubIssueSubmitUrl = @"https://api.github.com/repos%@/issues"
 	[self.activityIndicator setStyle:NSProgressIndicatorSpinningStyle];
 	[self.descriptionTextView addSubview:self.activityIndicator];
 	self.activityIndicator.hidden = true;
+	
+	
+	NSDictionary* prefsDict = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.hungri-yeti.xSendIssue"];
+	self.userName =[prefsDict objectForKey:self.hostName];
+	self.openUrl.state = [[prefsDict objectForKey: @"openUrl"] integerValue];
 }
 
 @end

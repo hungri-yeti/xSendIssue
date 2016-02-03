@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="buttonSubmit" destination="qd0-Sp-A2S" id="oAi-9b-U5x"/>
                 <outlet property="descriptionTextView" destination="lkf-cs-68v" id="uXP-jO-QgY"/>
+                <outlet property="openUrl" destination="3WF-X0-gqw" id="kGr-q5-DEk"/>
                 <outlet property="titleTextField" destination="1bz-ji-1QN" id="mqz-hw-oBg"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="57J-n2-gMA"/>
                 <outlet property="windowView" destination="EiT-Mj-1SZ" id="Pr8-lG-A1o"/>
@@ -103,6 +104,16 @@ Gw
                         </buttonCell>
                         <connections>
                             <action selector="didTapCancelButton:" target="-2" id="bOO-Sg-bzt"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3WF-X0-gqw">
+                        <rect key="frame" x="18" y="30" width="168" height="18"/>
+                        <buttonCell key="cell" type="check" title="Open Issue In Browser" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="tgp-iB-OCZ">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="didChangeOpenUrl:" target="-2" id="jaG-o6-vaT"/>
                         </connections>
                     </button>
                 </subviews>
