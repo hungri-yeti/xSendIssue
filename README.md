@@ -5,7 +5,7 @@ Introduction:
 -------------
 xSendIssue is an Xcode plugin that provides a quick and easy way to file Github issues on your Xcode project from within Xcode itself.
 
-https://cloud.githubusercontent.com/assets/15303429/12771053/cb4c7582-c9da-11e5-8792-bd1f8810ff03.png
+![screenshot](https://cloud.githubusercontent.com/assets/15303429/12771053/cb4c7582-c9da-11e5-8792-bd1f8810ff03.png "screenshot")
 
 
 Requirements:
